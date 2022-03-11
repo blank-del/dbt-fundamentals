@@ -6,6 +6,7 @@ sources:
     schema: stripe
     tables:
       - name: payment
+        description: Contains information payment information against orders.
         loaded_at_field: _etl_loaded_at
         freshness:
           warn_after: {count: 12, period: hour}
